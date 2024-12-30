@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF to Word Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>PDF to Word Converter</h1>
+      <p>Upload your PDF file and convert it to a Word document.</p>
+    </header>
+
+    <form id="upload-form" enctype="multipart/form-data">
+      <div class="form-group">
+        <input type="file" name="file" accept=".pdf" required />
+      </div>
+      <button type="submit" class="btn">Upload and Convert</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
